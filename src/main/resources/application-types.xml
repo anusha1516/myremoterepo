@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="samplee" format="json">
+      <types:shape format="weave" example="examples/sample.json"><![CDATA[%dw 2.0
+type samplee = Array<{|
+  tutorial_title: String, 
+  tutorial_author: String
+|}> {"MetadataFormat": "json",
+"example": "[{\"tutorial_title\":\"tutorialone\",\"tutorial_author\":\"author1\"},{\"tutorial_title\":\"tutorialone\",\"tutorial_author\":\"author2\"},{\"tutorial_title\":\"tutorialone\",\"tutorial_author\":\"author3\"}]"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+</types:mule>

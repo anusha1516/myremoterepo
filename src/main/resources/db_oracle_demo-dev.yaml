@@ -1,0 +1,7 @@
+listi: 'Angola'
+account:
+  table: 'country'
+  ownername: "select Name from country where name IN ('Aruba','Samoa')"
+  columnvalue: "select Name,IndepYear from country where (Name IN ('Aruba','Samoa')) OR (Name IN ('Angola','Uganda'))"
+     
+ 
